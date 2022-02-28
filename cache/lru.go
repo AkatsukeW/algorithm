@@ -2,6 +2,8 @@ package cache
 
 import "sync"
 
+var _ cache = (*LRUCache)(nil)
+
 // double linked list
 type Node struct {
 	key  interface{}
